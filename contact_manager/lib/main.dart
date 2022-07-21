@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return MaterialApp(
-      home: Text('Contact Manager')
+      home: Center(
+        child: Container( width: 50, height: 50, color: Colors.blue))
     );
-  }
+  } 
 }
