@@ -10,18 +10,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(title: Text("앱임")),
-            body: Text('안녕'),
-            bottomNavigationBar: BottomAppBar(
-                child: SizedBox(
-              height: 70,
-              child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Icon(Icons.call),
-                    Icon(Icons.message),
-                    Icon(Icons.book)
-                  ]),
-            ))));
+            appBar: AppBar(title: Text("앱")),
+            body: Align(
+              alignment: Alignment.topCenter,
+              child: Container(
+                  width: double.infinity,
+                  height: 50,
+                  margin: EdgeInsets.all(5),
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                      border: Border.all(color: Colors.black),
+                      color: Colors.blue),
+                  child: Text('test')),
+            )));
   }
 }
